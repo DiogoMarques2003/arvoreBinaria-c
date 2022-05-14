@@ -37,6 +37,21 @@ int main() {
 	posOrdem_ArvBin(raiz);
 	printf("\n");
 	
+	printf("Removendo o elemento %d.\n", dados[3]);
+	if (remove_ArvBin(raiz, dados[3])) {
+		printf("Item removido com sucesso.\n");
+		printf("Impressão em pos ordem: \n");
+		posOrdem_ArvBin(raiz);
+		printf("\n");
+	}
+	
+	printf("Procurar pelo número %d.\n", dados[1]);
+	if (consulta_ArvBin(raiz, dados[1])) {
+		printf("O valor %d foi encontrado na árvore.\n", dados[1]);
+	} else {
+		printf("O valor %d não foi encontrado na árvore.\n", dados[1]);
+	}
+	
 	liberta_ArvBin(raiz);
 	
 	return 0;

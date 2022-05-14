@@ -9,4 +9,6 @@ int altura_ArvBin(ArvBin *raiz);
 void preOrdem_ArvBin(ArvBin *raiz);
 void emOrdem_ArvBin(ArvBin *raiz);
 void posOrdem_ArvBin(ArvBin *raiz);
+int remove_ArvBin(ArvBin *raiz, int valor);
+int consulta_ArvBin(ArvBin *raiz, int valor);
 
